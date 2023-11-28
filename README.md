@@ -13,8 +13,11 @@ This project demonstrates a Flask-based web application for fraud detection that
 To run this project, you need to set up two EC2 servers:
 1. **Docker Server**: Responsible for running the Flask application and handling Docker containers.
 2. **MLflow Server**: Hosts the MLflow server to manage and track machine learning experiments.
-2.1. **Mlflow S3 Artifact Store**: Hosts the Models.
+
+2.1. **Mlflow S3 Artifact Store**: Hosts the Models.  
+
 2.2. **Mlflow Postgress Database**: Hosts the meta-data about the runs.  
+  
 3. **credentials.env**: Create a file with all you passwords
 
 A good starting point for this task in an AWS solution is: Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
