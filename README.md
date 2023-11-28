@@ -113,9 +113,11 @@ This project is intended for educational purposes, and deployment in a productio
 
 - Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 
-- Olokun, G. (2021, December 21). Add External Python Libraries to AWS Lambda using Lambda Layers. Medium. (https://gabegabeblog.medium.com/add-external-python-libraries-to-aws-lambda-using-lambda-layers-7b7d4268a10)
-
 - Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
 
 - Nimbalkar, S. (2021, May 27). How to Call an External REST API from AWS Lambda? Intelliconnect Engineering. Medium. https://intelliconnect.medium.com/how-to-call-an-external-rest-api-from-aws-lambda-7b38790af20a
+
+- Olokun, G. (2021, December 21). Add External Python Libraries to AWS Lambda using Lambda Layers. Medium. (https://gabegabeblog.medium.com/add-external-python-libraries-to-aws-lambda-using-lambda-layers-7b7d4268a10)
+
+- Pennsylvania State University. (n.d.). German Credit Data. The Pennsylvania State University. https://online.stat.psu.edu/stat508/resource/analysis/gcd/german_credit.csv
 
