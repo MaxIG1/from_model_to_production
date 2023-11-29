@@ -17,7 +17,6 @@ To run this project, you need to set up two EC2 servers:
     - 2.2. **Mlflow Postgress Database**: Hosts the meta-data about the runs.  
 3. **credentials.env**: Create a file with all you passwords
 
-A good starting point for this task in an AWS solution is: Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 
 
 ## Getting Started
@@ -39,7 +38,7 @@ A good starting point for this task in an AWS solution is: Daryani, C. (May 28).
      ```bash
      docker container run -d -p 5001:5001 -e AWS_ACCESS_KEY_ID=access_key -e AWS_SECRET_ACCESS_KEY=secret_key container_name
      ```
-A good starting point for an AWS solution is: Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
+A good starting point for an AWS environment is: Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
 
 
 3. **Setup MLflow Server:**
@@ -52,6 +51,7 @@ A good starting point for an AWS solution is: Nagar, D. (2019, October 12). Runn
      ```bash
      mlflow server -h 0.0.0.0 -p 5000 --app-name basic-auth --backend-store-uri [your_postgress_path] --default-artifact-root [your_s3_store] > mlflow_server.log 2>&1 &
      ```
+A good starting point for this task in an AWS environment is: Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 
 4. **Credentials File:**
    - Create a file named `credentials.env` with the necessary credentials for PostgreSQL, MLflow Tracking Server, and MLflow UI access. A example file is provided
@@ -59,6 +59,13 @@ A good starting point for an AWS solution is: Nagar, D. (2019, October 12). Runn
 5. **Set up the data**
 
     - Run the data_insertion.py script after you have initialised your postgress database, this will create 12.000 datapoints, of which 2000 are significantly shifted. 
+    I named the ml_flow experiments and models the following way: 
+    experiment_name = f"experiment_{number}"
+    model_name = f"model_{number}"
+
+    You need to have the same number in your cloud_fraud_detection.py file and your data_insertation.py file.
+    This way you will set up 11000 datapoints, with 1000 data points significantly shifted, meaning retraining will be issued.
+
 
 5. **Run the Application:**
    - Access the Flask application at `http://docker_server_ip:5001` in your web browser or via your prefered programm via the post method.
@@ -113,11 +120,12 @@ This project is intended for educational purposes, and deployment in a productio
 
 - Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 
-- Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
+- Hogg, R. V., Tanis, E. A., & Zimmerman, D. L. (2015). Probability and statistical inference (9. global ed.). Pearson Education Limited. 
+Kutner, M. H., Nachtsheim, C. J., Neter, J., & Li, W. (2020). Applied linear statistical models (5th. ed.,). McGraw Hill Education. 
 
-- Nimbalkar, S. (2021, May 27). How to Call an External REST API from AWS Lambda? Intelliconnect Engineering. Medium. https://intelliconnect.medium.com/how-to-call-an-external-rest-api-from-aws-lambda-7b38790af20a
+- Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
+Nimbalkar, S. (2021, May 27). How to Call an External REST API from AWS Lambda? Intelliconnect Engineering. Medium. https://intelliconnect.medium.com/how-to-call-an-external-rest-api-from-aws-lambda-7b38790af20a
 
 - Olokun, G. (2021, December 21). Add External Python Libraries to AWS Lambda using Lambda Layers. Medium. (https://gabegabeblog.medium.com/add-external-python-libraries-to-aws-lambda-using-lambda-layers-7b7d4268a10)
-
 - Pennsylvania State University. (n.d.). German Credit Data. The Pennsylvania State University. https://online.stat.psu.edu/stat508/resource/analysis/gcd/german_credit.csv
 
