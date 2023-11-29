@@ -121,7 +121,6 @@ This project is intended for educational purposes, and deployment in a productio
 - Daryani, C. (May 28). MLflow on AWS: A Step-by-Step Setup Guide. AMA Technology Blog. https://medium.com/ama-tech-blog/mlflow-on-aws-a-step-by-step-setup-guide-8601414dd6ea
 
 - Hogg, R. V., Tanis, E. A., & Zimmerman, D. L. (2015). Probability and statistical inference (9. global ed.). Pearson Education Limited. 
-Kutner, M. H., Nachtsheim, C. J., Neter, J., & Li, W. (2020). Applied linear statistical models (5th. ed.,). McGraw Hill Education. 
 
 - Kutner, M. H., Nachtsheim, C. J., Neter, J., & Li, W. (2020). Applied linear statistical models (5th. ed.,). McGraw Hill Education. 
 
