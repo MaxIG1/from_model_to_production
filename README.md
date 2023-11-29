@@ -60,10 +60,12 @@ A good starting point for this task in an AWS environment is: Daryani, C. (May 2
 
     - Run the data_insertion.py script after you have initialised your postgress database, this will create 12.000 datapoints, of which 2000 are significantly shifted. 
     I named the ml_flow experiments and models the following way: 
+
     experiment_name = f"experiment_{number}"
     model_name = f"model_{number}"
 
-    You need to have the same number in your cloud_fraud_detection.py file and your data_insertation.py file.
+    You need to have the same number in your cloud_fraud_detection.py file (line 24) and your data_insertation.py file (line 36). Or you name the ml flow moving parts after your own liking. In the current version its number 51.
+    
     This way you will set up 11000 datapoints, with 1000 data points significantly shifted, meaning retraining will be issued.
 
 
