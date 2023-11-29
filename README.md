@@ -126,7 +126,8 @@ Kutner, M. H., Nachtsheim, C. J., Neter, J., & Li, W. (2020). Applied linear sta
 - Kutner, M. H., Nachtsheim, C. J., Neter, J., & Li, W. (2020). Applied linear statistical models (5th. ed.,). McGraw Hill Education. 
 
 - Nagar, D. (2019, October 12). Running Docker on AWS EC2. AppGambit. Medium. https://medium.com/appgambit/part-1-running-docker-on-aws-ec2-cbcf0ec7c3f8
-Nimbalkar, S. (2021, May 27). How to Call an External REST API from AWS Lambda? Intelliconnect Engineering. Medium. https://intelliconnect.medium.com/how-to-call-an-external-rest-api-from-aws-lambda-7b38790af20a
+
+- Nimbalkar, S. (2021, May 27). How to Call an External REST API from AWS Lambda? Intelliconnect Engineering. Medium. https://intelliconnect.medium.com/how-to-call-an-external-rest-api-from-aws-lambda-7b38790af20a
 
 - Olokun, G. (2021, December 21). Add External Python Libraries to AWS Lambda using Lambda Layers. Medium. (https://gabegabeblog.medium.com/add-external-python-libraries-to-aws-lambda-using-lambda-layers-7b7d4268a10)
 
