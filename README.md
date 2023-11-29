@@ -65,7 +65,7 @@ A good starting point for this task in an AWS environment is: Daryani, C. (May 2
     model_name = f"model_{number}"
 
     You need to have the same number in your cloud_fraud_detection.py file (line 24) and your data_insertation.py file (line 36). Or you name the ml flow moving parts after your own liking. In the current version its number 51.
-    
+
     This way you will set up 11000 datapoints, with 1000 data points significantly shifted, meaning retraining will be issued.
 
 
@@ -80,7 +80,7 @@ A good starting point for this task in an AWS environment is: Daryani, C. (May 2
   - `/retrain`: Manually trigger the retraining of the machine learning model.
   - `/predict`: Endpoint to make predictions. Supports both GET and POST requests.
 
-    -example of an GET request via webbrowser http://docker_server_ip:5001/predict?account_balance=4&duration_of_credit_month=12&payment_status_of_previous_credit=4&purpose=3&credit_amount=618&value_savings_stocks=1&length_of_current_employment=5&instalment_per_cent=4&sex_marital_status=3&guarantors=1&duration_in_current_address=4&most_valuable_available_asset=2&age_years=56&concurrent_credits=3&type_of_apartment=2&no_of_credits_at_this_bank=1&occupation=1&no_of_dependents=3&telephone=0&foreign_worker=0
+    - example of an GET request via webbrowser http://docker_server_ip:5001/predict?account_balance=4&duration_of_credit_month=12&payment_status_of_previous_credit=4&purpose=3&credit_amount=618&value_savings_stocks=1&length_of_current_employment=5&instalment_per_cent=4&sex_marital_status=3&guarantors=1&duration_in_current_address=4&most_valuable_available_asset=2&age_years=56&concurrent_credits=3&type_of_apartment=2&no_of_credits_at_this_bank=1&occupation=1&no_of_dependents=3&telephone=0&foreign_worker=0
 
     - example of an POST request see post_request.py
 
